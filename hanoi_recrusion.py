@@ -9,3 +9,4 @@ haNoi(3, 'A', 'B', 'C')
 
 #equation:h(n) = h(n-1) + 1 + h(n-1)
 #h(x) = 2h(x-1) + 1 ~~ 2^n
+#https://github.com/Mdwsbb01/Algorithm.git
