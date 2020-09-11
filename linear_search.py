@@ -5,3 +5,4 @@ def linear_search(lst, val):
         else:
             return None
 
+#complex: O(n)

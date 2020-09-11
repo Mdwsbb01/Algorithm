@@ -1,4 +1,14 @@
-#requst: list is sorted
+from timeConsuming import *
+
+@timeConsuming
+def linear_search(lst, val):
+    for i, v in enumerate(lst):
+        if v == val:
+            return i
+        else:
+            return None
+
+@timeConsuming
 def binary_search(lst, val):
     left = 0
     right = len(lst) - 1
@@ -13,7 +23,6 @@ def binary_search(lst, val):
     else:
         return None
 
-l = [range(30000)]
-print(binary_search(l, 128))
-
-#complex: O(logn)
+lst = list(range(1000000))
+linear_search(lst, 983344)
+binary_search(lst, 983344)
